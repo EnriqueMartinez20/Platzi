@@ -1,0 +1,18 @@
+fun main(args: Array<String>) {
+
+
+    var opcion:String = """Selecciona la opción que prefieras
+1 | Hacer una receta
+2 | Ver mis recetas
+3 | Salir""".trimIndent()
+
+    println(opcion)
+    val response:String? = readLine()?:"3"
+
+    when(response){
+        "1" -> println("Hacer una receta\nIngresa tus ingredientes:")
+        "2" -> println("Mis Recetas:\nEsta sección está vacia :(")
+        "3" -> println("El menú se ha cerrado, vuelva pronto")
+        else -> println("Has seleccionado una opción invalida")
+    }
+}
